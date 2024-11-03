@@ -1,0 +1,91 @@
+/* 基本のスタイル設定 */
+.display-2 {
+    font-size: 3rem; /* デフォルトのフォントサイズ */
+}s
+
+.fs-2 {
+    font-size: 2rem; /* デフォルトのフォントサイズ */
+}
+
+.fs-3 {
+    font-size: 1.75rem; /* デフォルトのフォントサイズ */
+}
+
+.fs-4 {
+    font-size: 1.5rem; /* デフォルトのフォントサイズ */
+}
+
+.fs-5 {
+    font-size: 1.25rem; /* デフォルトのフォントサイズ */
+}
+
+.lead {
+    font-size: 1.25rem; /* デフォルトのフォントサイズ */
+}
+
+.accordion-button {
+    font-size: 1.5rem; /* デフォルトのフォントサイズ */
+}
+
+.accordion-body {
+    font-size: 1.25rem; /* デフォルトのフォントサイズ */
+}
+
+
+/* メディアクエリで画面サイズが768px以下の場合のスタイル */
+@media (max-width: 768px) {
+    .display-2 {
+        font-size: 2.5rem; /* 小さくするフォントサイズ */
+    }
+
+    .fs-2 {
+        font-size: 1.5rem; /* 小さくするフォントサイズ */
+    }
+
+    .fs-3 {
+        font-size: 1.25rem; /* 小さくするフォントサイズ */
+    }
+
+    .fs-4 {
+        font-size: 1.2rem; /* 小さくするフォントサイズ */
+    }
+
+    .fs-5 {
+        font-size: 1.0rem !important; /* 小さくするフォントサイズ */
+    }
+
+
+    .lead {
+        font-size: 1rem !important; /* 小さくするフォントサイズ */
+    }
+
+    .accordion-button {
+        font-size: 1.25rem !important; /* 小さくするフォントサイズ */
+    }
+
+    .accordion-body {
+        font-size: 1rem !important; /* 小さくするフォントサイズ */
+    }
+}
+
+
+.content-bg {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 影を追加 */
+    background-color: #f8f9fa; /* 背景色を設定 */
+    padding: 20px; /* パディングを追加して余白を確保 */
+}
+
+
+
+
+.background {
+    background-color: #f0f0f0;
+}
+
+
+.display-7 {
+    font-family: 'Trebuchet MS', sans-serif; /* Trebuchet MSを設定 */
+}
+
+
+
