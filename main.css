@@ -82,10 +82,52 @@
     background-color: #f0f0f0;
 }
 
+.background2 {
+    background-color: #0f0e0e;
+}
+
+
 
 .display-7 {
     font-family: 'Trebuchet MS', sans-serif; /* Trebuchet MSを設定 */
 }
 
+.styled-heading {
+    padding: 0.4em 0.5em; /* 文字の上下・左右の余白 */
+    color: #494949; /* 文字色 */
+    background: #f4f4f4; /* 背景色 */
+    border-left: solid 5px #7db4e6; /* 左線 */
+    border-bottom: solid 3px #d7d7d7; /* 下線 */
+    font-size: 2rem; /* 文字サイズ */
+    font-weight: bold; /* 文字を太字に */
+    text-align: left; /* 左揃え */
+    letter-spacing: 2px; /* 文字間隔 */
+    margin-left: 3%; /* 両サイドに余白を持たせる */
+    margin-right: 3%; /* 両サイドに余白を持たせる */
+}
 
 
+
+.slider {
+    width: 100%;
+    margin: auto;
+}
+
+.slider-item {
+    margin: 10px;
+}
+
+.slider-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.slider-item img:hover {
+    transform: scale(1.05);
+}
+
+.slider-item a {
+    pointer-events: auto; /* リンクがクリック可能に */
+}
