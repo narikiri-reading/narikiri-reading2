@@ -41,8 +41,8 @@
     </div>
 
     <div class="container content-bg" style="margin-top: 20px;">
-        <div class="row">
-            <div class="col-md-8">
+        <div class="row ">
+            <div class="col-md-8 " >
                 <!-- 動画という言葉をスタイルを使って表示 -->
                 <h1 class="styled-heading">VIDEO</h1>
     
@@ -124,40 +124,67 @@
                         </a>
                     </div>
                 </div>
+                    
+                <div class="hover-image-container">
+                    <img src="favorite_book.jpg" alt="favorite Book" class="hover-blur-image">
+                    <div class="overlay-text">おすすめ本</div>
+                </div>
+
+                <!-- 3すぐやる脳 -->
+                <div class="row mt-4">
+                    <div class="col-md-3">
+                        <img src="book_title/すぐやる脳.jpg" alt="すぐやる脳" class="img-fluid">
+                    </div>
+
+                    <!-- Google Fonts で Roboto フォントを読み込む -->
+                    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+                    <div class="col-md-9">
+                        <p style="font-family: 'Roboto', sans-serif; font-size: 1.0em; line-height: 1.6; letter-spacing: 0.05em; margin-bottom: 1.5em;">
+                            <span style="font-family: 'Roboto', sans-serif; font-size: 1.2em; font-weight: bold;">【概要】</span><br>
+                            新しいことに挑戦する際、やりたくないと感じることがありますが、これは脳がエネルギーを節約しようとするためです。しかし、ドーパミンという物質が分泌されるとやる気が出ます。日本人は遺伝的にドーパミンが出にくい傾向があり、挑戦を避けがちです。やる気を出すには、ドーパミンを定期的に少しずつ分泌させることが大切で、勉強や運動でも少しずつ進め、自分をほめることでドーパミンが分泌され、次の行動に繋がります。
+                            <a href="https://www.youtube.com/embed/U1mFy9aiikk" target="_blank" style="font-weight: bold; color: #007bff; text-decoration: none; display: block; text-align: right;">動画はコチラ</a>
+                        </p>
+                    </div>
+                </div>
+                
+
+                <!-- マインドフルネス -->
+                <div class="row mt-4">
+                    <div class="col-md-3">
+                        <img src="book_title/マインドフルネス.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="col-md-9">
+                        <p style="font-family: 'Roboto', sans-serif; font-size: 1.0em; line-height: 1.6; letter-spacing: 0.05em; margin-bottom: 1.5em;">
+                            <span style="font-family: 'Roboto', sans-serif; font-size: 1.2em; font-weight: bold;">【概要】</span><br>
+                            新しいことに挑戦する際、やりたくないと感じることがありますが、これは脳がエネルギーを節約しようとするためです。しかし、ドーパミンという物質が分泌されるとやる気が出ます。日本人は遺伝的にドーパミンが出にくい傾向があり、挑戦を避けがちです。やる気を出すには、ドーパミンを定期的に少しずつ分泌させることが大切で、勉強や運動でも少しずつ進め、自分をほめることでドーパミンが分泌され、次の行動に繋がります。
+                            <a href="https://www.youtube.com/embed/U1mFy9aiikk" target="_blank" style="font-weight: bold; color: #007bff; text-decoration: none; display: block; text-align: right;">動画はコチラ</a>
+                        </p>
+                    </div>   
+                </div>
             </div>
-
-    
-
-
-
-
-
-
-
+        
 
 
             <div class="col-md-4 small bordered-text">
-
-                <div class="text-center">
-                    <div class="profile-image">
-                        <img src="profile.png" alt="プロフィール画像">
-                    </div>
-                    <div class="mt-2 fs-5 profile-border">
-                         <p>村上恭介</p>
-                    </div>
-                    
-                    <div class="profile-section p-3 bg-light rounded text-start mt-3">
-                        <h2 class="fs-5 light-border">プロフィール</h2>
-                        <ul class="list-unstyled ">
-                            <li>大学院卒業後、自動車部品工場の開発業務を担当。</li>
-                            <li>その後、中途入社で大手自動車会社で品質保証部の業務を担当。</li>
-                            <li>現在は、大手製造会社で各工場の品質改善業務を担当。シックスシグマ、データ解析などを駆使して各工場の不良問題を解決してきた。</li>
-                            <li>改善業務に携わると同時に、ヒューマンスキル講師を担当</li>
-                        </ul>
-                        <div class="mt-4">
-                            <h3 class="fs-5 light-border">E-learning</h3>
-                            <p>「現場の方と良好な人間関係を構築する方法」をUdemyで紹介</p>
+                <div class="profile-wrapper">
+                    <!-- プロフィール背景 -->
+                    <div class="profile-background">
+                        <div class="profile-image">
+                            <img src="profile.jpg" alt="プロフィール画像">
                         </div>
+                    </div>
+                
+                    <!-- プロフィールセクション -->
+                    <div class="profile-section p-3 bg-light rounded text-start mt-3">
+                        <h2 class="profile-name">きょーすけ</h2> <!-- CSSで定義したクラスを使用 -->
+                        <div class="profile-description">
+                            <p>ハウツー本、ビジネス書、生活に役立つ本をテーマに動画配信 | 社内コンサル業務やプロジェクト達成に必要なコミュニケーション・ファシリテーションスキルの講師を担当 | これまでの経験を活かし、ビジネスに役立つ情報を発信中</p>
+                        </div>
+                    </div>
+                </div>
+                
 
 
                 <h5 style="text-align: center; margin: 10px 0;">YouTube配信動画</h5>
@@ -177,6 +204,7 @@
                     </iframe>
                 </div>
             </div>
+        </div>
     </div>
 
     <footer class="border-top my-5 py-4">

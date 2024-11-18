@@ -131,3 +131,98 @@
 .slider-item a {
     pointer-events: auto; /* リンクがクリック可能に */
 }
+
+/* 背景画像を設定 */
+.profile-background {
+    background-image: url('profile_background.jpg'); /* 背景画像のパス */
+    background-size: cover; /* 画像を親要素に合わせてリサイズ */
+    background-position: center; /* 画像を中央に配置 */
+    width: 100%; /* 横幅を親要素に合わせる */
+    height: 200px; /* 高さを適切に指定（例: 200px） */
+    margin-bottom: 20px; /* 画像の下に余白を追加（必要に応じて調整） */
+    position: relative; /* 子要素（プロフィール画像）を絶対位置で配置するために親要素を相対位置にする */
+}
+
+/* プロフィール画像 */
+.profile-image {
+    width: 120px; /* 画像の幅 */
+    height: 120px; /* 画像の高さ */
+    overflow: hidden; /* 画像が枠からはみ出さないようにする */
+    margin: 0 auto; /* 中央揃え */
+    border: 3px solid #ebedee; /* ボーダーの色と幅 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を付ける */
+    position: absolute; /* 絶対位置に変更 */
+    top: 140px; /* 背景画像の下に配置（下に跨がるように位置を調整） */
+    left: 50%; /* 中央揃え */
+    transform: translateX(-50%); /* 左右中央揃え */
+}
+
+.profile-image img {
+    width: 100%; /* 画像の幅を親要素に合わせる */
+    height: 100%; /* 画像の高さを親要素に合わせる */
+    object-fit: cover; /* 画像の比率を保ちながら親要素にフィットさせる */
+}
+
+/* 名前の部分のスタイル */
+.profile-name {
+    font-size: 1.25rem; /* フォントサイズ */
+    font-weight: bold; /* 太字 */
+    text-align: center; /* 中央揃え */
+    color: #333; /* テキストの色 */
+    margin-top: 40px; /* プロフィール画像との間隔を広げる */
+    margin-bottom: 10px; /* 下の要素との間隔 */
+}
+
+.profile-description {
+    text-align: center; /* 中央揃え */
+    margin-top: 20px; /* 上部の余白 */
+    line-height: 1.8; /* 行間を広げて文章の読みやすさを調整 */
+}
+
+.profile-description span {
+    display: block; /* ブロック要素として扱うことで改行を強制 */
+    margin-bottom: 25px; /* 文章の下に余白を追加（文と文の間隔を広げる） */
+}
+
+/* プロフィール全体をまとめるラッパー */
+.profile-wrapper {
+    background-color: white; /* 背景色を少し薄い色にして全体を一つのブロックに見せる */
+    padding: 15px;
+    border-radius: 10px; /* 角を丸くして、セクションが一体感を持つようにする */
+    margin-bottom: 20px; /* 下の余白を追加 */
+}
+
+/* 画像のぼかし効果を追加 */
+.hover-image-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;         /* 横幅は100% */
+    height: 10%;         /* 縦幅は1/4（25%） */
+}
+
+/* ぼかし効果のある画像 */
+.hover-blur-image {
+    width: 100%;                /* 横幅は親要素に合わせる */
+    height: auto;               /* 縦幅は画像のアスペクト比に従う */
+    transform: translateY(-37.5%); /* 上方向に少し移動して縦中央の部分を表示 */
+    filter: blur(5px);          /* 初期状態でぼやける */
+    transition: filter 0.3s ease; /* ホバー時のトランジション */
+}
+
+/* ホバー時にぼやけを解除 */
+.hover-image-container:hover .hover-blur-image {
+    filter: blur(0);
+}
+
+/* テキストのスタイル */
+.overlay-text {
+    position: absolute;
+    top: 50%;                  /* 縦の中央に配置 */
+    left: 50%;                 /* 横の中央に配置 */
+    transform: translate(-50%, -50%); /* 中央揃え */
+    color: white;              /* テキストの色 */
+    font-size: 24px;           /* フォントサイズ */
+    font-weight: bold;         /* フォントの太さ */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* 影を追加して読みやすく */
+    pointer-events: none;      /* テキスト部分でのクリックを無効に */
+}
