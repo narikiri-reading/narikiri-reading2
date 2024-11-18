@@ -106,6 +106,20 @@
     margin-right: 3%; /* 両サイドに余白を持たせる */
 }
 
+.styled-heading2 {
+    padding: 0.4em 0.5em; /* 文字の上下・左右の余白 */
+    color: #494949; /* 文字色 */
+    background: #f4f4f4; /* 背景色 */
+    border-left: solid 5px #9c7753; /* 左線 */
+    border-bottom: solid 3px #d7d7d7; /* 下線 */
+    font-size: 2rem; /* 文字サイズ */
+    font-weight: bold; /* 文字を太字に */
+    text-align: left; /* 左揃え */
+    letter-spacing: 2px; /* 文字間隔 */
+    margin-left: 3%; /* 両サイドに余白を持たせる */
+    margin-right: 3%; /* 両サイドに余白を持たせる */
+}
+
 
 
 .slider {
@@ -197,7 +211,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;         /* 横幅は100% */
-    height: 10%;         /* 縦幅は1/4（25%） */
+    height: 5%;         /* 縦幅は1/4（25%） */
 }
 
 /* ぼかし効果のある画像 */
