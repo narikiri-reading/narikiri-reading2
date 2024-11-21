@@ -309,7 +309,28 @@
     padding: 10px 20px;
     text-align: center;
     display: block;
+    background-color: #000; /* リンクの背景を黒に設定 */
     border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* 目立たせるために少し濃くする */
+}
+
+/* 携帯版でメニューを表示した際に背景色を設定 */
+@media (max-width: 991px) {
+    .menu-links {
+        background-color: #000; /* メニューの背景を黒に設定 */
+        position: fixed; /* メニューを固定して表示 */
+        top: 0;
+        left: 0;
+        width: 250px; /* メニューの幅を調整 */
+        height: 100%; /* メニューの高さを画面いっぱいに設定 */
+        padding-top: 60px; /* 上部に余白を追加 */
+        display: block;
+        z-index: 1000; /* メニューが他のコンテンツよりも前面に表示されるように */
+    }
+
+    .nav-link {
+        color: white; /* リンクの文字色を白に設定 */
+        background-color: #000; /* リンク背景を黒に設定 */
+    }
 }
 
 /* デスクトップ表示時は通常表示 */
@@ -326,4 +347,5 @@
         align-items: center;
     }
 }
+
 
