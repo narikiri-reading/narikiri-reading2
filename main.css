@@ -281,6 +281,6 @@
 
 @media (max-width: 480px) {
     .gallery {
-        grid-template-columns: repeat(2, 1fr); /* さらに小さい画面では2列 */
+        grid-template-columns: repeat(3, 1fr); /* さらに小さい画面では2列 */
     }
 }
