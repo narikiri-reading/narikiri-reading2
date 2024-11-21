@@ -305,11 +305,11 @@
 /* ナビゲーションリンクのスタイル */
 .nav-link {
     text-decoration: none;
-    color: white;
+    color: white; /* 文字色を白に設定 */
     padding: 10px 20px;
     text-align: center;
     display: block;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* 目立たせるために少し濃くする */
 }
 
 /* デスクトップ表示時は通常表示 */
