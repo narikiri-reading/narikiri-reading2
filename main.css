@@ -242,3 +242,45 @@
 }
 
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6列に並べる */
+    gap: 5px; /* 画像間の隙間 */
+    justify-items: center; /* 各セルの中身を中央に配置 */
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.gallery img {
+    width: 110px; /* 横幅を統一 */
+    height: 160px; /* 高さを統一 */
+    object-fit: cover; /* アスペクト比を無視して枠に収める */
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* ホバーで拡大 */
+    border-color: #888;
+}
+
+/* 各6列ごとに行間を追加 */
+.gallery > img:nth-child(6n) { 
+    margin-bottom: 20px; /* 6番目の画像の下に余白を追加 */
+}
+
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* スマホでは3列 */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* さらに小さい画面では2列 */
+    }
+}
