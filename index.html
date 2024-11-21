@@ -262,16 +262,42 @@
     document.addEventListener("DOMContentLoaded", function () {
         const menuToggle = document.getElementById("menuToggle");
         const menuLinks = document.getElementById("menuLinks");
+        
+        // オーバーレイ要素を作成
+        const overlay = document.createElement("div");
+        overlay.classList.add("overlay");
 
+        // メニュー表示・非表示とオーバーレイの表示・非表示を切り替える
         menuToggle.addEventListener("click", function () {
-            // メニューの表示・非表示を切り替え
             if (menuLinks.style.display === "none" || menuLinks.style.display === "") {
+                // メニューを表示
                 menuLinks.style.display = "block";
+                // オーバーレイを表示
+                document.body.appendChild(overlay);
+                overlay.style.display = "block";
             } else {
+                // メニューを非表示
                 menuLinks.style.display = "none";
+                // オーバーレイを非表示
+                overlay.style.display = "none";
+                // オーバーレイがある場合は削除
+                if (overlay.parentNode) {
+                    overlay.parentNode.removeChild(overlay);
+                }
+            }
+        });
+
+        // オーバーレイがクリックされたらメニューを閉じる
+        overlay.addEventListener("click", function () {
+            menuLinks.style.display = "none";
+            overlay.style.display = "none"; // オーバーレイを非表示
+            // オーバーレイがある場合は削除
+            if (overlay.parentNode) {
+                overlay.parentNode.removeChild(overlay);
             }
         });
     });
 </script>
+
 </body>
 </html>
