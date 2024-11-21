@@ -301,3 +301,29 @@
     height: 100%;
 }
 
+
+/* ナビゲーションリンクのスタイル */
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* デスクトップ表示時は通常表示 */
+@media (min-width: 992px) {
+    .menu-links {
+        display: flex !important; /* デスクトップでは常に表示 */
+        gap: 20px;
+    }
+
+    .nav-link {
+        border-bottom: none;
+        padding: 0 50px;
+        display: flex;
+        align-items: center;
+    }
+}
+
