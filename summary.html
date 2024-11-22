@@ -87,12 +87,23 @@
     
     <!-- リンクのセクション -->
     <div class="background2 py-2 shadow mb-0">
-        <div class="container d-flex justify-content-center">
-            <a href="index.html" style="text-decoration: none; color: white; width: auto; padding: 0 50px; text-align: center; display: flex; align-items: center; border-right: 1px solid white;">ホーム</a>
-            <a href="about.html" style="text-decoration: none; color: white; width: auto; padding: 0 50px; text-align: center; display: flex; align-items: center; border-right: 1px solid white;">なりきり読書とは</a>
-            <a href="video.html" style="text-decoration: none; color: white; width: auto; padding: 0 50px; text-align: center; display: flex; align-items: center; border-right: 1px solid white;">なりきり動画</a>
-            <a href="summary.html" style="text-decoration: none; color: white; width: auto; padding: 0 50px; text-align: center; display: flex; align-items: center; border-right: 1px solid white;">かんたん要約</a>
-            <a href="#" style="text-decoration: none; color: white; width: auto; padding: 0 50px; text-align: center; display: flex; align-items: center;">お問い合わせ</a>
+        <div class="container">
+            <!-- ハンバーガーメニュー -->
+            <div class="d-flex justify-content-between align-items-center">
+                <button id="menuToggle" class="menu-btn d-lg-none" style="background: none; border: none; color: white; font-size: 24px;">
+                    ☰
+                </button>
+
+            </div>
+
+            <!-- メニュー -->
+            <div id="menuLinks" class="menu-links d-lg-flex justify-content-center" style="display: none;">
+                <a href="index.html" class="nav-link">ホーム</a>
+                <a href="about.html" class="nav-link">なりきり読書とは</a>
+                <a href="video.html" class="nav-link">なりきり動画</a>
+                <a href="summary.html" class="nav-link">かんたん要約</a>
+                <a href="#" class="nav-link">お問い合わせ</a>
+            </div>
         </div>
     </div>
 
