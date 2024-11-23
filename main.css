@@ -120,6 +120,15 @@
     margin-right: 3%; /* 両サイドに余白を持たせる */
 }
 
+@media (max-width: 768px) {
+    .styled-heading2 {
+        font-size: 1.5rem;  /* モバイル用に大きさ調整 */
+    }
+    p {
+        font-size: 0.9rem; /* モバイル用に文字サイズを少し小さく */
+    }
+}
+
 
 
 .slider {
