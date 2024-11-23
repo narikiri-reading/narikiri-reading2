@@ -107,25 +107,41 @@
 }
 
 .styled-heading2 {
-    padding: 0.4em 0.5em; /* 文字の上下・左右の余白 */
-    color: #494949; /* 文字色 */
-    background: #f4f4f4; /* 背景色 */
-    border-left: solid 5px #9c7753; /* 左線 */
-    border-bottom: solid 3px #d7d7d7; /* 下線 */
-    font-size: 2rem; /* 文字サイズ */
-    font-weight: bold; /* 文字を太字に */
-    text-align: left; /* 左揃え */
-    letter-spacing: 2px; /* 文字間隔 */
-    margin-left: 3%; /* 両サイドに余白を持たせる */
-    margin-right: 3%; /* 両サイドに余白を持たせる */
+    font-size: 2rem;  /* 通常画面での文字サイズ */
+    padding: 0.4em 0.5em;
+    color: #494949;
+    background: #f4f4f4;
+    border-left: solid 5px #9c7753;
+    border-bottom: solid 3px #d7d7d7;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 2px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;  /* 通常画面での文字サイズ */
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    margin: 1em 0 0.5em 20px;
 }
 
 @media (max-width: 768px) {
     .styled-heading2 {
-        font-size: 1.5rem;  /* モバイル用に大きさ調整 */
+        font-size: 1.5rem;  /* モバイル画面では文字を少し小さく */
+        margin-left: 2%; /* 左右のマージンを少し狭く */
+        margin-right: 2%; /* 左右のマージンを少し狭く */
     }
+
     p {
-        font-size: 0.9rem; /* モバイル用に文字サイズを少し小さく */
+        font-size: 1rem;  /* モバイル画面では文字を少し小さく */
+        margin: 0.8em 0 0.4em 10px;  /* パラグラフのマージンも狭く */
+    }
+
+    img {
+        margin: 0 0 40px 0; /* 画像のマージンを狭く */
     }
 }
 
