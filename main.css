@@ -32,6 +32,7 @@
 }
 
 
+
 /* メディアクエリで画面サイズが768px以下の場合のスタイル */
 @media (max-width: 768px) {
     .display-2 {
@@ -78,9 +79,24 @@
 
 
 
+
+
+
+/* 通常時のスタイル（デスクトップなど） */
 .background {
-    background-color: #f0f0f0;
+    background: linear-gradient(180deg, #ddc39f, #f0e0cc); /* 背景グラデーションを設定 */
+    padding: 20px 0; /* 上下に少しマージンを設定 */
 }
+
+/* 携帯時のスタイル（画面幅が768px以下の場合） */
+@media (max-width: 768px) {
+    .background {
+        padding: 0; /* マージンを0にすることで背景の幅を拡張する */
+    }
+}
+
+
+
 
 .background2 {
     background-color: #0f0e0e;
@@ -399,13 +415,3 @@ p {
 }
 
 
-@media (max-width: 768px) {
-    .background {
-        padding-top: 0.5rem; /* モバイル表示時に上の余白を狭く */
-        padding-bottom: 0.5rem; /* モバイル表示時に下の余白を狭く */
-    }
-
-    .display-7 {
-        font-size: 1.2rem; /* モバイルでフォントサイズを少し小さく */
-    }
-}
