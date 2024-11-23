@@ -399,3 +399,13 @@ p {
 }
 
 
+@media (max-width: 768px) {
+    .background {
+        padding-top: 0.5rem; /* モバイル表示時に上の余白を狭く */
+        padding-bottom: 0.5rem; /* モバイル表示時に下の余白を狭く */
+    }
+
+    .display-7 {
+        font-size: 1.2rem; /* モバイルでフォントサイズを少し小さく */
+    }
+}
