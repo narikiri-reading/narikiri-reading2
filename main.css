@@ -216,7 +216,9 @@ p {
     top: 140px; /* 背景画像の下に配置（下に跨がるように位置を調整） */
     left: 50%; /* 中央揃え */
     transform: translateX(-50%); /* 左右中央揃え */
+    border-radius: 50%; /* 画像を丸くする */
 }
+
 
 .profile-image img {
     width: 100%; /* 画像の幅を親要素に合わせる */
