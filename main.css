@@ -85,8 +85,8 @@
 /* 通常時のスタイル（デスクトップなど） */
 .background {
     background: linear-gradient(180deg, #ddc39f, #f0e0cc); /* 背景グラデーションを設定 */
-    padding-top: 20px;  /* 上にスペースを拡張 */
-    padding-bottom: 15px; /* 下にスペースを拡張 */
+    padding-top: 0px;  /* 上にスペースを拡張 */
+    padding-bottom: 0px; /* 下にスペースを拡張 */
 }
 
 /* 携帯時のスタイル（画面幅が768px以下の場合） */
@@ -425,3 +425,14 @@ p {
 }
 
 
+.logo-img {
+    width: 100px; /* ロゴ画像の幅 */
+    height: auto; /* 高さはアスペクト比に応じて自動調整 */
+}
+
+/* Flexboxのスタイルで要素を横並びに */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 左右端に配置 */
+}
