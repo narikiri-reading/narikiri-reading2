@@ -440,3 +440,17 @@ p {
         display: none; /* ロゴを非表示にする */
     }
 }
+
+<style>
+    /* デフォルトで画像は表示 */
+    .overview-book-image {
+        display: block;
+    }
+
+    /* 画面幅が768px以下（タブレットやスマートフォン）になった場合 */
+    @media (max-width: 768px) {
+        .overview-book-image {
+            display: none; /* 画像を非表示 */
+        }
+    }
+</style>
