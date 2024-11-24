@@ -195,7 +195,7 @@ p {
 
 /* 背景画像を設定 */
 .profile-background {
-    background-image: url('profile_background.jpg'); /* 背景画像のパス */
+    background-image: url('../../profile_background.jpg'); /* 背景画像のパス */
     background-size: cover; /* 画像を親要素に合わせてリサイズ */
     background-position: center; /* 画像を中央に配置 */
     width: 100%; /* 横幅を親要素に合わせる */
