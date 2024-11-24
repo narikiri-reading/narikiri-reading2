@@ -10,7 +10,6 @@
 
         gtag('config', 'G-T9WH5SN0JE');
         </script>
-
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -89,15 +88,7 @@
             }
         </style>
 
-
-        <!-- サイドバーを非表示にするCSS -->
-        <style>
-            /* サイドバー非表示 */
-            #right-sidebar {
-                display: none !important;
-            }
-        </style>
-
+        <link rel="stylesheet" href="../main.css"> <!-- 必要に応じてCSSファイルを指定 -->
     </head>
     
 
@@ -105,10 +96,9 @@
     <div class="background">
         <div class="container d-flex align-items-center justify-content-between">
             <h1 class="display-7" style="font-weight: bold; font-size: 1.5rem;">なりきり読書</h1>
-            <img src="logo.png" alt="ロゴ画像" class="logo-img">
+            <img src="../logo.png" alt="ロゴ画像" class="logo-img">
         </div>
     </div>
-
     
     <!-- リンクのセクション -->
     <div class="background2 py-2 shadow mb-0">
@@ -123,11 +113,11 @@
 
             <!-- メニュー -->
             <div id="menuLinks" class="menu-links d-lg-flex justify-content-center" style="display: none;">
-                <a href="index.html" class="nav-link">ホーム</a>
-                <a href="about.html" class="nav-link">なりきり読書とは</a>
-                <a href="video.html" class="nav-link">なりきり動画</a>
-                <a href="summary.html" class="nav-link">かんたん要約</a>
-                <a href="question.html" class="nav-link">お問い合わせ</a>
+                <a href="../index.html" class="nav-link">ホーム</a>
+                <a href="../about.html" class="nav-link">なりきり読書とは</a>
+                <a href="../video.html" class="nav-link">なりきり動画</a>
+                <a href="../summary.html" class="nav-link">かんたん要約</a>
+                <a href="../question.html" class="nav-link">お問い合わせ</a>
             </div>
         </div>
     </div>
@@ -135,89 +125,54 @@
     <div class="container content-bg" style="margin-top: 20px;">
         <div class="row ">
             <div class="col-md-8 " >
+                <!-- 動画という言葉をスタイルを使って表示 -->
+                <h1 class="styled-heading">本の概要</h1>
+    
 
-                    
-                <div class="hover-image-container">
-                    <img src="favorite_book.jpg" alt="favorite Book" class="hover-blur-image">
-                    <div class="overlay-text">おすすめ本</div>
+
+
+
+
+                <!-- GRIT -->
+                <div class="row mt-4">
+                    <div class="col-md-3">
+                        <img src="../book_title/GRIT.jpg" alt="GRIT" class="img-fluid">
+                    </div>
+
+                    <!-- Google Fonts で Roboto フォントを読み込む -->
+                    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+                    <div class="col-md-9">
+                        <p style="font-family: 'Roboto', sans-serif; font-size: 1.0em; line-height: 1.6; letter-spacing: 0.05em; margin-bottom: 1.5em;">
+                            <span style="font-family: 'Roboto', sans-serif; font-size: 1.2em; font-weight: bold;">【概要】</span><br>
+                            
+                            アンジェラ・ダックワースさん率いるチームは、学校や軍隊などで成功する人々の共通点を調査。その結果、重要なのはIQではなく「やり抜く力」だと判明。この本では、その力をどう育てるか具体的な方法が解説されています。さらに、目標達成に必要なマインドセットや行動習慣についても詳しく述べられており、自分の可能性を引き出すためのヒントが満載。挑戦を続けるための実践的なステップを学び、あなたも新たな一歩を踏み出しましょう！
+                            <a href="https://www.youtube.com/@narikiri-reading" target="_blank" style="font-weight: bold; color: #007bff; text-decoration: none; display: block; text-align: right;">動画のチャンネルはコチラ</a>
+                        </p>
+                    </div>
+
+               
+                    <!-- 動画を添付 -->
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/CgJF97Hu1VM" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p>【本要約】IQが高い人が能力を発揮できる？実証テストから導いた能力を発揮する人の共通点【参考本：GRIT～やり抜く力～】</p>
+
                 </div>
-
-                <!-- 本の画像を添付 6列 -->
-                <div class="gallery">
-                    <a href="概要/すぐやる脳.html" >
-                        <img src="book_title/すぐやる脳.jpg" alt="すぐやる脳">
-                    </a>
-                    <a href="概要/マインドフルネス.html" >
-                        <img src="book_title/マインドフルネス.jpg" alt="マインドフルネス">
-                    </a>
-                    <a href="概要/GRIT.html" >
-                        <img src="book_title/GRIT.jpg" alt="GRIT">
-                    </a>
-                    <a href="概要/頭のいい人が話す前に考えていること.html" >
-                        <img src="book_title/頭のいい人が話す前に考えていること.jpg" alt="頭のいい人が話す前に考えていること">
-                    </a>
-                    <a href="概要/ヘルスメンテナンス.html" >
-                        <img src="book_title/ヘルスメンテナンス.jpg" alt="ヘルスメンテナンス">
-                    </a>
-                    <a href="概要/アウトプット大全.html" >
-                        <img src="book_title/アウトプット大全.jpg" alt="アウトプット大全">
-                    </a>
-                    <!-- 次の行 -->
-                    <a href="概要/コーヒーのすごい健康長寿力.html" >
-                        <img src="book_title/コーヒーのすごい健康長寿力.jpg" alt="コーヒーのすごい健康長寿力">
-                    </a>
-                    <a href="概要//心療内科医が教える本当の休み方.html" >
-                        <img src="book_title/心療内科医が教える本当の休み方.jpg" alt="心療内科医が教える本当の休み方">
-                    </a>
-                    <a href="概要/承認欲求に振り回される人たち.html" >
-                        <img src="book_title/承認欲求に振り回される人たち.jpg" alt="承認欲求に振り回される人たち">
-                    </a>
-                    <a href="概要/見た目が10歳若くなる本.html" >
-                        <img src="book_title/見た目が10歳若くなる本.jpg" alt="見た目が10歳若くなる本">
-                    </a>
-                    <a href="概要/否定しない習慣.html" >
-                        <img src="book_title/否定しない習慣.jpg" alt="否定しない習慣">
-                    </a>
-                    <a href="概要/めんどくさいが消える脳の使い方.html" >
-                        <img src="book_title/めんどくさいが消える脳の使い方.jpg" alt="めんどくさいが消える脳の使い方">
-                    </a>
-                    <!-- 次の行 -->
-                    <a href="概要/出来るリーダーはこれしかやらない.html" >
-                        <img src="book_title/出来るリーダーはこれしかやらない.jpg" alt="出来るリーダーはこれしかやらない">
-                    </a>
-                    <a href="概要/嫌われずに言い返す技術.html" >
-                        <img src="book_title/嫌われずに言い返す技術.jpg" alt="嫌われずに言い返す技術">
-                    </a>
-                    <a href="概要/怒りが消える心のトレーニング.html" >
-                        <img src="book_title/怒りが消える心のトレーニング.jpg" alt="怒りが消える心のトレーニング">
-                    </a>
-                    <a href="概要/科学がつきとめた運のいい人.html" >
-                        <img src="book_title/科学がつきとめた運のいい人.jpg" alt="科学がつきとめた運のいい人">
-                    </a>
-                    <a href="概要/移動する人はうまくいく.html" >
-                        <img src="book_title/移動する人はうまくいく.jpg" alt="移動する人はうまくいく">
-                    </a>
-                    <a href="概要/筋トレが最強のソリューションである.html" >
-                        <img src="book_title/筋トレが最強のソリューションである.jpg" alt="筋トレが最強のソリューションである">
-                    </a>
-                    <!-- 次の行 -->
-                    <a href="概要/EQリーダーシップ.html" >
-                        <img src="book_title/EQリーダーシップ.jpg" alt="EQリーダーシップ">
-                    </a>
-                </div>
-
-            </div>
+           </div>
         
 
-            <div class="col-md-4">
-                <!-- 右側コンテンツ（rightside.html） -->
-                <iframe src="rightside.html" width="100%" height="600" style="border: none;"></iframe>
-            </div>
 
-
-            
-            
-            
+           <div class="col-md-4">
+            <!-- 右側コンテンツ（rightside.html） -->
+            <iframe src="../rightside.html" width="100%" height="600" style="border: none;"></iframe>
+           </div>
 
 
         </div>
@@ -243,10 +198,5 @@
 
 <!-- 自分の script.js ファイル -->
 <script src="script.js" type="text/javascript"></script>
-
-
-
-
-
 </body>
 </html>
