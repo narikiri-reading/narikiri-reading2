@@ -92,8 +92,8 @@
 /* 携帯時のスタイル（画面幅が768px以下の場合） */
 @media (max-width: 768px) {
     .background {
-        padding-top: 5px;  /* 上にスペースを拡張 */
-        padding-bottom: 5px; /* 下にスペースを拡張 */
+        padding-top: 0px;  /* 上にスペースを拡張 */
+        padding-bottom: 0px; /* 下にスペースを拡張 */
     }
 
     h1 {
@@ -234,7 +234,7 @@ p {
     font-weight: bold; /* 太字 */
     text-align: center; /* 中央揃え */
     color: #333; /* テキストの色 */
-    margin-top: 40px; /* プロフィール画像との間隔を広げる */
+    margin-top: 70px; /* プロフィール画像との間隔を広げる */
     margin-bottom: 10px; /* 下の要素との間隔 */
 }
 
@@ -430,9 +430,13 @@ p {
     height: auto; /* 高さはアスペクト比に応じて自動調整 */
 }
 
-/* Flexboxのスタイルで要素を横並びに */
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* 左右端に配置 */
+
+
+
+
+/* 画面幅が768px以下の時のスタイル */
+@media (max-width: 768px) {
+    .logo-img {
+        display: none; /* ロゴを非表示にする */
+    }
 }
