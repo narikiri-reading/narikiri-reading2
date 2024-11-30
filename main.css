@@ -457,12 +457,16 @@ p {
         margin: 0 auto; /* 中央揃え */
     }
 
-    /* 画面幅が768px以下（タブレットサイズ以下）になった場合 */
+    /* 画面幅が768px以下（携帯サイズ以下）の場合 */
     @media (max-width: 768px) {
+        .overview-book-container {
+            text-align: center; /* 親要素で中央揃えを適用 */
+        }
+
         .overview-book-image {
-            width: 200px; /* 幅を200pxに縮小 */
-            height: 300px; /* 高さを300pxに縮小 */
-            margin: 0 auto; /* 中央揃え */
+            width: 100px; /* 幅を200pxに縮小 */
+            height: 150px; /* 高さを300pxに縮小 */
+            margin: 0 auto; /* 画像自体の中央揃え */
         }
     }
 </style>
