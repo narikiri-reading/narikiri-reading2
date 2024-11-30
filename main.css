@@ -142,6 +142,13 @@
     margin-right: 3%;
 }
 
+/* 携帯画面の場合 */
+@media (max-width: 768px) {
+    .styled-heading, .styled-heading2 {
+        font-size: 1rem; /* 携帯の場合の文字サイズ */
+    }
+}
+
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;  /* 通常画面での文字サイズ */
