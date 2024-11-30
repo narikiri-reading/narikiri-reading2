@@ -92,7 +92,7 @@
 /* 携帯時のスタイル（画面幅が768px以下の場合） */
 @media (max-width: 768px) {
     .background {
-        padding-top: 0px;  /* 上にスペースを拡張 */
+        padding-top: 2px;  /* 上にスペースを拡張 */
         padding-bottom: 0px; /* 下にスペースを拡張 */
     }
 
