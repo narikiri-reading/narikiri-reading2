@@ -292,6 +292,12 @@ p {
     pointer-events: none;      /* テキスト部分でのクリックを無効に */
 }
 
+/* 携帯端末用のスタイル */
+@media (max-width: 768px) {
+    .hover-image-container {
+        height: 45px;            /* 高さを携帯端末用に調整（例えば150px） */
+    }
+}
 
 .gallery {
     display: grid;
