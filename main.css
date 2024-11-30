@@ -92,7 +92,7 @@
 /* 携帯時のスタイル（画面幅が768px以下の場合） */
 @media (max-width: 768px) {
     .background {
-        padding-top: 2px;  /* 上にスペースを拡張 */
+        padding-top: 10px;  /* 上にスペースを拡張 */
         padding-bottom: 0px; /* 下にスペースを拡張 */
     }
 
@@ -448,9 +448,12 @@ p {
 }
 
 <style>
-    /* デフォルトで画像は表示 */
+    /* デフォルトで画像は表示し、サイズを固定 */
     .overview-book-image {
         display: block;
+        width: 300px; /* 幅を300pxに固定 */
+        height: 400px; /* 高さを400pxに固定 */
+        object-fit: cover; /* 画像のアスペクト比を保ちながら、サイズを調整 */
     }
 
     /* 画面幅が768px以下（タブレットやスマートフォン）になった場合 */
