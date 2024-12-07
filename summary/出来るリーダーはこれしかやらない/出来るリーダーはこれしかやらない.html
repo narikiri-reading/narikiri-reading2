@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- SEO対策済みメタタグ -->
+        <meta name="description" content="部下のやる気を引き出すためのリーダーシップ改善法">
+        <meta name="keywords" content=" できるリーダーは「これ」しかやらない, リーダーシップ, リーダー, 部下のモチベーション, モチベーション, 仕事の目的, ビジネス書, リーダーの悩み, チームマネジメント, モチベーションアップ, 仕事のやりがい, リーダーシップ向上, 自己成長, 部下育成">
+
+        <!-- タイトルの最適化 -->
+        <title>怒りを数値化し、価値観を見直し、上手に叱る！アンガーマネジメントで感情をコントロールする3つの具体策</title>
+        
+        <!-- Open Graph タグ (SNSシェア時の表示最適化) -->
+        <meta property="og:title" content="部下のやる気を引き出すためのリーダーシップ改善法">
+        <meta property="og:description" content="部下のやる気を引き出すためのリーダーシップ改善法">
+        <meta property="og:image" content="https://example.com/thumbnail.jpg"> <!-- 画像URLは適宜修正 -->
+        <meta property="og:url" content="https://example.com">
+        <meta property="og:type" content="website">
+        
+        <!-- Twitterカードの設定 -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="なりきり読書 | ビジネス書レビューで共感力と問題解決力を鍛える">
+        <meta name="twitter:description" content="時間管理や健康、モチベーションアップに役立つビジネス書を紹介。共感力を高めるためのヒントも満載！">
+        <meta name="twitter:image" content="https://example.com/thumbnail.jpg">
+        
+        <!-- 構造化データ（JSON-LD形式） -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "なりきり読書 | 共感力と問題解決力を鍛える",
+          "description": "ビジネス書をレビューし、共感力や問題解決力を高めるYouTubeチャンネル。時間管理術や健康、モチベーション向上のヒントも学べます。",
+          "thumbnailUrl": "https://example.com/thumbnail.jpg",
+          "uploadDate": "2024-11-18",
+          "publisher": {
+            "@type": "Organization",
+            "name": "なりきり読書",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://example.com/logo.jpg"
+            }
+          },
+          "contentUrl": "https://www.youtube.com/@narikiri-reading",
+          "embedUrl": "https://www.youtube.com/embed/live_stream?channel=narikiri-reading"
+        }
+        </script>
+    
+        <!-- 標準のファビコン -->
+        <link rel="icon" href="../../favicon/favicon.ico" type="image/x-icon">
+
+        <!-- PNG形式のファビコン（推奨: 32x32, 16x16などのサイズ） -->
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+
+        <!-- Apple Touch Icon (iOS用) -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+
+        <!-- マニフェスト (PWA対応の場合) -->
+        <link rel="manifest" href="/favicon/site.webmanifest">
+        
+        <!-- BootstrapとCSSの読み込み -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+              rel="stylesheet" 
+              integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+              crossorigin="anonymous">
+        <link href="main.css" rel="stylesheet">
+
+        <!-- メニュータブ -->
+        <script defer src="menu.js"></script>
+    
+        <!-- 背景画像のCSS -->
+        <style>
+            body {
+                background-image: url('../../Bookshelf.jpg'); /* 背景画像の設定 */
+                background-size: cover; /* 画像をカバー */
+                background-attachment: fixed; /* スクロール時に固定 */
+                background-position: center; /* 画像を中央に配置 */
+            }
+        </style>
+        <link rel="stylesheet" href="../../main.css"> <!-- 必要に応じてCSSファイルを指定 -->
+    </head>
+    
+
+    <body class="custom-bg">
+        <div class="background">
+            <div class="container d-flex align-items-center justify-content-between">
+                <h1 class="display-7" style="font-weight: bold; font-size: 1.5rem;">なりきり読書</h1>
+                <img src="../../logo.png" alt="ロゴ画像" class="logo-img">
+            </div>
+        </div>
+    
+    <!-- リンクのセクション -->
+    <div class="background2 py-2 shadow mb-0">
+        <div class="container">
+            <!-- ハンバーガーメニュー -->
+            <div class="d-flex justify-content-between align-items-center">
+                <button id="menuToggle" class="menu-btn d-lg-none" style="background: none; border: none; color: white; font-size: 24px;">
+                    ☰
+                </button>
+
+            </div>
+
+            <!-- メニュー -->
+            <div id="menuLinks" class="menu-links d-lg-flex justify-content-center" style="display: none;">
+                <a href="../../index.html" class="nav-link">ホーム</a>
+                <a href="../../about.html" class="nav-link">なりきり読書とは</a>
+                <a href="../../video.html" class="nav-link">なりきり動画</a>
+                <a href="../../summary.html" class="nav-link">かんたん要約</a>
+                <a href="../../question.html" class="nav-link">お問い合わせ</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container content-bg" style="margin-top: 20px;">
+        <div class="row ">
+            <div class="col-md-8 " >
+
+                    
+                <h1 class="styled-heading">かんたん要約</h1>
+
+                <div class="container">
+                    <!-- 画像表示 -->
+                    <div class="image-gallery">
+                        <div class="gallery-item">
+                            <img src="1.png" alt="画像1">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="2.png" alt="画像2">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="3.png" alt="画像3">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="4.png" alt="画像4">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CSS -->
+                <style>
+                    .image-gallery {
+                        display: flex;
+                        flex-direction: column; /* 画像を縦に並べる */
+                        align-items: center; /* 中央揃え */
+                        justify-content: center; /* 上下方向も中央揃え */
+                        gap: 20px; /* 画像間の余白 */
+                        margin: 20px 0;
+                    }
+
+                    .gallery-item {
+                        display: flex;
+                        justify-content: center; /* 画像を親要素内で中央揃え */
+                        width: 100%; /* 親要素の幅を設定 */
+                    }
+
+                    .gallery-item img {
+                        width: 80%; /* 通常時は幅を80%に設定 */
+                        height: auto; /* 高さは画像比率に合わせる */
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 画像に影を追加 */
+                        border-radius: 10px; /* 画像の角を丸める */
+                        display: block; /* img要素をブロック要素に */
+                    }
+
+                    /* 携帯用スタイル */
+                    @media (max-width: 768px) {
+                        .gallery-item img {
+                            width: 100%; /* 携帯では画像を全幅表示 */
+                        }
+                    }
+</style>
+
+                
+
+                
+                
+
+
+            </div>
+        
+
+
+            <div class="col-md-4">
+                <!-- 右側コンテンツ（rightside.html） -->
+                <iframe src="../../rightside.html" width="100%" height="600" style="border: none;"></iframe>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="border-top my-5 py-4">
+        <p class="small text-muted text-center">&copy; 2024 なりきり読書</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+
+
+<!-- 必要なJavaScriptとCSSの読み込み -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<!-- Slick CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick JS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<!-- 自分の script.js ファイル -->
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
